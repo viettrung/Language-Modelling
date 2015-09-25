@@ -1,0 +1,22 @@
+I have implemented the trigram language models using the Katz back off smoothing technique which are trained on the
+BROWN corpus and REUTERS corpus.
+The results are as below:
+
+1. For the language model that is trained on the BROWN corpus:
+- I use the first 490 brown corpus files to train (it takes about 7s for training)
+- After that, I evaluate this language model on both BROWN corpus and REUTERS corpus:
+    + Computing the perplexity for the rest 10 brown corpus files (it takes about 33s)
+    ==> perplexity = 274.4732873901855
+
+    + Computing the perplexity for the test set of the REUTERS corpus (3019 files, it takes ~800s)
+    ==> perplexity = 564.916121809559
+
+2. For the language model that is trained on the REUTERS corpus:
+- I use the training set of the REUTERS corpus to train (7769 files, it takes ~8s)
+- After that, I evaluate this language model on both BROWN corpus and REUTERS corpus:
+    + Computing the perplexity for the test set of the REUTERS corpus (3019 files, it takes ~295s)
+    ==> perplexity = 135.91220816643056
+
+    + Computing the perplexity for the rest 10 brown corpus files (it takes ~39s)
+    ==> perplexity = 657.2699009793142
+
