@@ -1,4 +1,4 @@
-# This is an implementation of the trigram language models (with Katz back off smoothing technique) which are trained and tested on the Brown corpus and the Reuters corpus.
+# This is an implementation of the trigram language models.
 
 # Usage:
 (Prerequisite: You need to install python version 3 on your machine in order to run this program)
